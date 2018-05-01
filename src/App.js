@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 
 import Header from './Header';
 
-import './App.css';
+
+
+import { css } from 'aphrodite/no-important';
+
+import styles from './AppStyles'
 
 
 const menu = [
@@ -29,7 +33,7 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <div className={css(styles.container)}>
                 {/*<Dropdown />*/}
                 <Header  items={menu}/>
 
