@@ -16,7 +16,7 @@ import registerServiceWorker from './registerServiceWorker';
 import {
     BrowserRouter,
     Route,
-    Link
+    Link,
 } from 'react-router-dom'
 
 import reducerApp from './reducers';
