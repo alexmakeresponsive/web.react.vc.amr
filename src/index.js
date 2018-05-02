@@ -9,6 +9,7 @@ import App from './App';
 import Home from './routes/Home';
 import About from './routes/About';
 import Works from './routes/Works';
+import Work from './routes/Work';
 import Contacts from './routes/Contacts';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -16,38 +17,34 @@ import registerServiceWorker from './registerServiceWorker';
 import {
     BrowserRouter,
     Route,
-    Link,
+    Link
 } from 'react-router-dom'
+
+import {
+    Router,
+} from 'react-router'
+
+import createHashHistory from 'history/createHashHistory';
+// import createBrowserHistory from 'history/createBrowserHistory';
+
+import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
 
 import reducerApp from './reducers';
 
+
+
 //Create srore( Redux Store )
 const store = createStore(reducerApp, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+//Create history
+const hashHistory = createHashHistory();
+// const browserHistory = createBrowserHistory();
+const history = syncHistoryWithStore(hashHistory, store);
+
 
 //Show events
 store.subscribe(()=>{
     console.log('subscribe', store.getState());
 });
-
-//CRUD for store
-// store.dispatch({
-//     type: 'ADD_WORK',
-//     payload: {
-//         link:        '/works/work-4',
-//         title:       'Title 4',
-//         description: 'Some description 4',
-//     }
-// });
-
-// store.dispatch({ type: 'ADD_WORK', payload: { title: 'Title 5', } });
-
-//Form for add new work
-//const btnAddNewWork = document.querySelector('#btnAddNewWork');
-// btnAddNewWork.addEventListener('click', () => {
-//     const workTitle = '';
-// });
-
-
 
 
 ReactDOM.render(
@@ -55,10 +52,11 @@ ReactDOM.render(
         <BrowserRouter>
             <div>
                 <App />
-                <Route path='/home' component={Home}/>
-                <Route path='/about' component={About}/>
-                <Route path='/works' component={Works} works={store}/>
-                <Route path='/contacts' component={Contacts}/>
+                <Route path='/home/' component={Home}/>
+                <Route path='/about/' component={About}/>
+                <Route path='/works/' component={Works} works={store}/>
+                <Route path='/work/:id/' component={Work}/>
+                <Route path='/contacts/' component={Contacts}/>
             </div>
         </BrowserRouter>
     </Provider>,

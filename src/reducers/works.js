@@ -1,16 +1,19 @@
 const initialState = [
     {
-        link:        '/works/work-1',
+        id:          '1',
+        link:        '/work/1/',
         title:       'Title 1',
         description: 'Some description 1'
     },
     {
-        link:        '/works/work-2',
+        id:          '2',
+        link:        '/work/2/',
         title:       'Title 2',
         description: 'Some description 2'
     },
     {
-        link:        '/works/work-3',
+        id:          '3',
+        link:        '/work/3/',
         title:       'Title 3',
         description: 'Some description 3'
     },

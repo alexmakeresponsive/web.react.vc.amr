@@ -12,19 +12,19 @@ import appStyles from './AppStyles';
 
 const menu = [
     {
-        link:  '/home',
+        link:  '/home/',
         label: 'Home'
     },
     {
-        link:  '/about',
+        link:  '/about/',
         label: 'About'
     },
     {
-        link:  '/works',
+        link:  '/works/',
         label: 'Works'
     },
     {
-        link:  '/contacts',
+        link:  '/contacts/',
         label: 'Contacts'
     }
 ];
