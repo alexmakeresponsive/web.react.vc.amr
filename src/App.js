@@ -7,7 +7,7 @@ import Header from './Header';
 
 import { css } from 'aphrodite/no-important';
 
-import styles from './AppStyles'
+import appStyles from './AppStyles';
 
 
 const menu = [
@@ -33,7 +33,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className={css(styles.container)}>
+            <div className={css(appStyles.container)}>
                 {/*<Dropdown />*/}
                 <Header  items={menu}/>
 

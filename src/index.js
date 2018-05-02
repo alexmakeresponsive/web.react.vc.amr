@@ -100,29 +100,42 @@ const initialState = {
 
 
 //This is reducer
-function works(state=initialState, action) {
-    // console.log(action);
-
+function reducerApp(state=initialState, action) {
     if (action.type === 'ADD_WORK') {
-        return [
+        return {
             ...state,
-            action.work
-        ]
+            works: [...state.works, action.payload]
+        }
     }
 
     return state;
 }
 
-const store = createStore(works);
+//Create srore( Redux Store )
+const store = createStore(reducerApp);
 
-// console.log(store.getState());
-
+//Show events
 store.subscribe(()=>{
     console.log('subscribe', store.getState());
 });
 
-// store.dispatch({ type: 'ADD_WORK', work: 'Title of some work 1' });
-// store.dispatch({ type: 'ADD_WORK', work: 'Title of some work 2' });
+//CRUD for store
+// store.dispatch({
+//     type: 'ADD_WORK',
+//     payload: {
+//         link:        '/works/work-4',
+//         title:       'Title 4',
+//         description: 'Some description 4',
+//     }
+// });
+
+// store.dispatch({ type: 'ADD_WORK', payload: { title: 'Title 5', } });
+
+//Form for add new work
+//const btnAddNewWork = document.querySelector('#btnAddNewWork');
+// btnAddNewWork.addEventListener('click', () => {
+//     const workTitle = '';
+// });
 
 
 
@@ -141,6 +154,8 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
+
+
 
 
 registerServiceWorker();
