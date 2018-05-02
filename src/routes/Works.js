@@ -30,7 +30,7 @@ class Works extends Component {
     }
 
     render() {
-        console.log('is it test store?', this.props.testStore);
+        console.log('is it test store?', this.props.worksArray);
 
         return (
             <div className={css(appStyles.container) + '  works'}>
@@ -47,7 +47,7 @@ class Works extends Component {
                     <button className={css(appStyles.btns)} type="submit" onClick={this.findWork.bind(this)} >Find</button>
                 </div>
                 <ul id="worksList"  className={css(appStyles.lists)}>
-                    {this.props.testStore.works.map((item, index) =>
+                    {this.props.worksArray.map((item, index) =>
                         <div key={index}>
                             <div>
                                 <a className="link" href={item.link}>{item.title}</a>
@@ -68,11 +68,11 @@ class Works extends Component {
 
 export default connect(
     state => ({
-        testStore: state
+        worksArray: state.works.filter(target => target.title.includes(state.worksFind))
     }),
     dispatch => ({
-        onFindWork: (name) => {
-            dispatch({ type: 'FIND_WORK', payload: name })
+        onFindWork: (query) => {
+            dispatch({ type: 'FIND_WORK', payload: query })
         },
         onAddWork: (addInputValue) => {
             dispatch({ type: 'ADD_WORK', payload: { link: 'Link', title: addInputValue, description: '-' } })

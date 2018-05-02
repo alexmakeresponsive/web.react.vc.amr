@@ -19,100 +19,10 @@ import {
     Link
 } from 'react-router-dom'
 
-
-const initialState = {
-    skills: {
-        adminSkills:            [
-            'Ubuntu',
-            'Debian',
-            'Fedora',
-            'Mac OS X',
-            'Windows',
-        ],
-        backendSkills:          [
-            'MySQL'
-        ],
-        frontendSkills:         {
-            markup: [
-                'HTML5',
-                'CSS3',
-                'LESS',
-                'SASS',
-                'Stylus',
-                'SVG',
-            ],
-            javascript: [
-                'AMD',
-                'UMD',
-                'CommonJS',
-                'ES6 modules',
-            ]
-        },
-        envSkills: [
-            'Grunt',
-            'Gulp',
-            'Webpack',
-        ],
-        programmLanguafeSkills: {
-            backend: [
-                'PHP',
-            ],
-            frontend: [
-                'JavaScript'
-            ]
-        },
-        cmsSkills: [
-            'Wordpress',
-            'Wordpress + Woocommerce',
-            'Magento 1',
-            'Magento 2',
-            'OpenCart',
-        ],
-        frameworksSkills: [
-            'Yii 1',
-        ],
-        libsSkills: [
-            'NodeJS',
-            'ReactJS',
-            'RequireJS',
-        ]
-    },
-    works: [
-        {
-            link:        '/works/work-1',
-            title:       'Title 1',
-            description: 'Some description 1'
-        },
-        {
-            link:        '/works/work-2',
-            title:       'Title 2',
-            description: 'Some description 2'
-        },
-        {
-            link:        '/works/work-3',
-            title:       'Title 3',
-            description: 'Some description 3'
-        },
-    ],
-};
-
-
-
-
-//This is reducer
-function reducerApp(state=initialState, action) {
-    if (action.type === 'ADD_WORK') {
-        return {
-            ...state,
-            works: [...state.works, action.payload]
-        }
-    }
-
-    return state;
-}
+import reducerApp from './reducers';
 
 //Create srore( Redux Store )
-const store = createStore(reducerApp);
+const store = createStore(reducerApp, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 //Show events
 store.subscribe(()=>{
