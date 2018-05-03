@@ -16,17 +16,17 @@ import registerServiceWorker from './registerServiceWorker';
 import {
     BrowserRouter,
     Route,
-    Link
+    // Link
 } from 'react-router-dom'
 
-import {
-    Router,
-} from 'react-router'
+// import {
+//     Router,
+// } from 'react-router'
 
-import createHashHistory from 'history/createHashHistory';
+// import createHashHistory from 'history/createHashHistory';
 // import createBrowserHistory from 'history/createBrowserHistory';
 
-import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
+// import { syncHistoryWithStore } from 'react-router-redux'
 
 import reducerApp from './reducers';
 
@@ -35,9 +35,9 @@ import reducerApp from './reducers';
 //Create srore( Redux Store )
 const store = createStore(reducerApp, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 //Create history
-const hashHistory = createHashHistory();
+// const hashHistory = createHashHistory();
 // const browserHistory = createBrowserHistory();
-const history = syncHistoryWithStore(hashHistory, store);
+// const history = syncHistoryWithStore(hashHistory, store);
 
 
 //Show events

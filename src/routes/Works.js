@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { css } from 'aphrodite/no-important';
 
 import appStyles   from '../AppStyles';
-import worksStyles from './WorksStyles';
+// import worksStyles from './WorksStyles';
 
 
 class Works extends Component {
@@ -14,9 +14,9 @@ class Works extends Component {
     // const worksThis = this;
 
     addWork() {
-        console.log('i add this work', this.addInput.value);
+        // console.log('i add this work', this.addInput.value);
 
-        if (this.addInput.value == '') {
+        if (this.addInput.value === '') {
             return true;
         }
 
@@ -25,12 +25,12 @@ class Works extends Component {
     }
 
     findWork() {
-        console.log('i find this work', this.searchInput.value);
+        // console.log('i find this work', this.searchInput.value);
         this.props.onFindWork(this.searchInput.value)
     }
 
     render() {
-        console.log('is it test store?', this.props.worksArray);
+        // console.log('is it test store?', this.props.worksArray);
 
         return (
             <div className={css(appStyles.container) + '  works'}>
