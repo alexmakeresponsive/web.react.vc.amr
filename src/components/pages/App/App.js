@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
 // import Dropdown from './Dropdown';
 
-import Header from './Header';
+import Header from '../../../components/parts/Header/Header';
 
 
 
-import { css } from 'aphrodite/no-important';
+// import { css } from 'aphrodite/no-important';
 
-import appStyles from './AppStyles';
+// import appStyles from './AppStyles';
 
 
 const menu = [
     {
-        link:  '/home/',
-        label: 'Home'
+        link:  '/works/',
+        label: 'Works'
+    },
+    {
+        link:  '/skills/',
+        label: 'Skills'
     },
     {
         link:  '/about/',
         label: 'About'
-    },
-    {
-        link:  '/works/',
-        label: 'Works'
     },
     {
         link:  '/contacts/',
@@ -33,10 +33,8 @@ class App extends Component {
 
     render() {
         return (
-            <div className={css(appStyles.container)}>
-                {/*<Dropdown />*/}
+            <div>
                 <Header  items={menu}/>
-
             </div>
         );
     }

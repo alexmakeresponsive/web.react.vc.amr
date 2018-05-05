@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import RegistrationForm from '../RegistrationForm';
+import RegistrationForm from '../../parts/Forms/RegistrationForm';
 
 class Contacts extends Component {
 

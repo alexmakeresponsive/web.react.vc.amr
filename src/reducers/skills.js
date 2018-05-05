@@ -1,58 +1,90 @@
+//skillItemLevel0Value
 const initialState = {
-        adminSkills:            [
-            'Ubuntu',
-            'Debian',
-            'Fedora',
-            'Mac OS X',
-            'Windows',
+    //skillItemLevel1
+    adminSkills:
+    //skillItemLevel1Value
+    [
+        //skillItemLevel2
+        'Ubuntu',
+        'Debian',
+        'Fedora',
+        'Mac OS X',
+        'Windows',
+    ],
+
+
+
+    //skillItemLevel1
+    backendSkills:
+    //skillItemLevel1Value
+    [
+        //skillItemLevel2
+        'MySQL'
+        //skillItemLevel2Value === skillItemLevel2
+    ],
+    //skillItemLevel1
+    frontendSkills:
+    //skillItemLevel1Value
+    {
+        //skillItemLevel2
+        markup:
+        //skillItemLevel2Value
+        [
+            //skillItemLevel3
+            'HTML5',
+            'CSS3',
+            'LESS',
+            'SASS',
+            'Stylus',
+            'SVG',
         ],
-        backendSkills:          [
-            'MySQL'
-        ],
-        frontendSkills:         {
-            markup: [
-                'HTML5',
-                'CSS3',
-                'LESS',
-                'SASS',
-                'Stylus',
-                'SVG',
-            ],
-            javascript: [
-                'AMD',
-                'UMD',
-                'CommonJS',
-                'ES6 modules',
-            ]
-        },
-        envSkills: [
-            'Grunt',
-            'Gulp',
-            'Webpack',
-        ],
-        programmLanguafeSkills: {
-            backend: [
-                'PHP',
-            ],
-            frontend: [
-                'JavaScript'
-            ]
-        },
-        cmsSkills: [
-            'Wordpress',
-            'Wordpress + Woocommerce',
-            'Magento 1',
-            'Magento 2',
-            'OpenCart',
-        ],
-        frameworksSkills: [
-            'Yii 1',
-        ],
-        libsSkills: [
-            'NodeJS',
-            'ReactJS',
-            'RequireJS',
+        javascript:
+        [
+            'AMD',
+            'UMD',
+            'CommonJS',
+            'ES6 modules',
         ]
+    },
+
+
+
+
+    envSkills:
+    [
+        'Grunt',
+        'Gulp',
+        'Webpack',
+    ],
+    programmLanguafeSkills:
+    {
+        backend:
+        [
+            'PHP',
+        ],
+        frontend:
+        [
+            'JavaScript'
+        ]
+    },
+    cmsSkills:
+    [
+        'Wordpress',
+        'Wordpress + Woocommerce',
+        'Magento 1',
+        'Magento 2',
+        'OpenCart',
+    ],
+    frameworksSkills:
+    [
+        'Yii 1',
+    ],
+    libsSkills:
+    [
+        'NodeJS',
+        'ReactJS',
+        'RequireJS',
+    ]
 };
 
 
