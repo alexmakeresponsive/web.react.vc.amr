@@ -20,13 +20,14 @@ class Skills extends Component {
 
         for (let skillItemLevel1 in skillItemLevel0Value) {
             let skillItemLevel1Value = skillItemLevel0Value[skillItemLevel1];
+            // console.log(skillItemLevel1Value);
 
             //Loop Level 1
             let resultLevel1         = [];
             let i1                   = 0;
 
-            for (let skillItemLevel2 in skillItemLevel1Value) {
-                let skillItemLevel2Value = skillItemLevel1Value[skillItemLevel2];
+            for (let skillItemLevel2 in skillItemLevel1Value.collection) {
+                let skillItemLevel2Value = skillItemLevel1Value.collection[skillItemLevel2];
                 // console.log(skillItemLevel2Value);
 
                 if (typeof skillItemLevel2Value === 'string') {
@@ -35,15 +36,15 @@ class Skills extends Component {
 
 
                 if (typeof skillItemLevel2Value === 'object') {
-                    // console.log(skillItemLevel2);
+                    // console.log(skillItemLevel2Value);
 
                     //Loop Level 2
                     let resultLevel2         = [];
                     let i2                   = 0;
 
-                    for (let skillItemLevel3 in skillItemLevel2Value) {
-                        let skillItemLevel3Value = skillItemLevel2Value[skillItemLevel3];
-                        // console.log(skillItemLevel3Value);
+                    for (let skillItemLevel3 in skillItemLevel2Value.collection) {
+                        let skillItemLevel3Value = skillItemLevel2Value.collection[skillItemLevel3];
+                        console.log(skillItemLevel3Value);
 
                         resultLevel2.push(<span key={i2++} className={css(skillsStyles.skillPill)}>{skillItemLevel3Value}</span>);
                     }
@@ -52,7 +53,7 @@ class Skills extends Component {
                     resultLevel1.push(
                         <div key={i1++} className={css(skillsStyles.skillItemsLevel2)}>
                             <div>
-                                <h4>{skillItemLevel2}</h4>
+                                <h4>{skillItemLevel2Value.title}</h4>
                             </div>
                             <div >{resultLevel2}</div>
                         </div>
@@ -64,7 +65,7 @@ class Skills extends Component {
             resultLevel0.push(
                 <div key={i0++} className={css(skillsStyles.skillItemsLevel1)}>
                     <div>
-                        <h3>{skillItemLevel1}</h3>
+                        <h3>{skillItemLevel1Value.title}</h3>
                     </div>
                     <div >{resultLevel1}</div>
                 </div>
