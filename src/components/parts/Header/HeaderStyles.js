@@ -40,15 +40,19 @@ export const headerStyles = StyleSheet.create({
         }
     },
     col1Container: {
-        '@media (max-width: 767px)': {
+        '@media (max-width: 991px)': {
             display: 'flex',
             justifyContent: 'center'
-        }
+        },
+
+        '@media (max-width: 420px)': {
+            fontSize: 36,
+        },
     },
     col2Container: {
         height: '100%',
 
-        '@media (max-width: 767px)': {
+        '@media (max-width: 991px)': {
             display: 'flex',
             justifyContent: 'center'
         }

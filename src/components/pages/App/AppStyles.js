@@ -61,6 +61,11 @@ export const logoStyles = StyleSheet.create({
         textAlign: 'center',
         paddingLeft: '15px',
         paddingRight: '15px',
+
+        '@media (max-width: 420px)': {
+            paddingLeft:  '8px',
+            paddingRight: '8px',
+        },
     },
     after: {
 
@@ -79,7 +84,6 @@ export const formStyles = StyleSheet.create({
     },
     inputInline: {
         padding: 15,
-        marginRight: 30,
         backgroundColor: '#f6f6f6',
         color: '#35353c',
         border: 'none'

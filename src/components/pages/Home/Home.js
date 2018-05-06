@@ -18,7 +18,7 @@ class Home extends Component {
                     <Row>
                         <Col xs={12}>
                             <p className={css(appStyles.textCenter)}>
-                                Welcome to my web card. You can know about me and my works here.
+                                Welcome to my web card. You can know about my works and me here.
                             </p>
                         </Col>
                     </Row>

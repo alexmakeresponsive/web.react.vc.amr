@@ -25,9 +25,9 @@ class Header extends Component {
             <div className={css(headerStyles.header)}>
                 <Grid className={css(appStyles.container)}>
                     <Row className={css(headerStyles.headerRow)}>
-                        <Col  xs={12} sm={5} md={6} lg={4} >
-                            <div className={css(fontStyles.font_2) + ' ' + css(headerStyles.col1Container)}>
-                                <a href="/home/" className={css(appStyles.elInlineBlock) + ' ' + css(appStyles.links) + ' ' + css(headerStyles.logoWrapp)}>
+                        <Col  xs={12} sm={12} md={6} lg={4} >
+                            <div className={css(fontStyles.fontLogo) + ' ' + css(headerStyles.col1Container)}>
+                                <a href="/" className={css(appStyles.elInlineBlock) + ' ' + css(appStyles.links) + ' ' + css(headerStyles.logoWrapp)}>
                                     <div className={css(appStyles.logo)}>
                                         <span className={css(logoStyles.before)}>-</span>
                                         <span className={css(logoStyles.logoBody)}>Must Have<br/>Responsive</span>
@@ -36,7 +36,7 @@ class Header extends Component {
                                 </a>
                             </div>
                         </Col>
-                        <Col  xs={12} sm={7} md={6} lg={8}>
+                        <Col  xs={12} sm={12} md={6} lg={8}>
                             <div className={css(fontStyles.font_1) + ' ' + css(headerStyles.col2Container)}>
                                 <nav className={css(headerStyles.nav)}>
                                 {this.props.items.map((item, index) =>

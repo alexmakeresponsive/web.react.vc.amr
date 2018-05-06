@@ -17,6 +17,7 @@ import registerServiceWorker from './registerServiceWorker';
 import {
     BrowserRouter,
     Route,
+    Redirect,
 } from 'react-router-dom'
 
 import reducerApp from './reducers';
@@ -35,7 +36,7 @@ ReactDOM.render(
         <BrowserRouter>
             <div>
                 <App />
-                <Route path='/home/' component={Home}/>
+                <Route exact path='/' component={Home}/>
                 <Route path='/skills/' component={Skills}/>
                 <Route path='/about/' component={About}/>
                 <Route path='/works/' component={Works} works={store}/>

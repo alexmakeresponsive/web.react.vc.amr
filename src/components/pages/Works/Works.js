@@ -37,7 +37,7 @@ class Works extends Component {
         // console.log('is it test store?', this.props.worksArray);
 
         return (
-            <div className={css(appStyles.container) + ' ' + css(fontStyles.fontBody)}>
+            <div className={' ' + css(fontStyles.fontBody)}>
                 <Grid className={css(appStyles.container)}>
                     <Row>
                         <Col xs={12}>
@@ -50,7 +50,7 @@ class Works extends Component {
                     <Row>
                         <Col xs={12}>
                             <div className={css(worksStyles.formWrapper)}>
-                                <input  className={css(formStyles.inputInline) + ' ' + css(fontStyles.fontFormInput)}
+                                <input  className={css(formStyles.inputInline) + ' ' + css(worksStyles.inputSearch) + ' ' + css(fontStyles.fontFormInput)}
                                         type="text"
                                         ref={(input) => { this.searchInput = input }}
                                         placeholder="query..."

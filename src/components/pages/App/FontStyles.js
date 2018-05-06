@@ -25,6 +25,11 @@ export default StyleSheet.create({
         fontSize: 32,
         textTransform: 'uppercase'
     },
+    fontLogo: {
+        fontFamily: [FontMontserratBold, "sans-serif"],
+        fontSize: 48,
+        textTransform: 'uppercase'
+    },
     fontPageMainTitle: {
         fontFamily: [FontMontserratBold, "sans-serif"],
         fontSize: 36,
