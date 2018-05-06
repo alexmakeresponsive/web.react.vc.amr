@@ -88,7 +88,7 @@ class Works extends Component {
 
 export default connect(
     (state, ownProps) => ({
-        worksArray: state.works.filter(target => target.title.includes(state.worksFind)),
+        worksArray: state.works.filter(target => target.text.includes(state.worksFind)),
         ownProps
     }),
     dispatch => ({
