@@ -38,7 +38,7 @@ class Works extends Component {
 
         return (
             <div className={css(appStyles.container) + ' ' + css(fontStyles.fontBody)}>
-                <Grid>
+                <Grid className={css(appStyles.container)}>
                     <Row>
                         <Col xs={12}>
                             <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(worksStyles.title)}>Works</h2>
@@ -59,7 +59,7 @@ class Works extends Component {
                             </div>
                             <Row>
                                 {this.props.worksArray.map((item, index) =>
-                                    <Col lg={4} key={index} className={css(worksStyles.itemWrapper)}>
+                                    <Col xs={12} sm={6} md={4} lg={4} key={index} className={css(worksStyles.itemWrapper) + ' COL'}>
                                         <div>
                                             <a className={css(appStyles.elBlock)} href={item.link}>
                                                 <div className={css(worksStyles.imgWrapper)}>

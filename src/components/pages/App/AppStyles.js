@@ -29,14 +29,26 @@ export const appStyles = StyleSheet.create({
         justifyContent: 'flex-start',
         alignItems: 'center',
         padding: '15px',
-        marginLeft: '-15px'
     },
+
     elBlock: {
         display: 'block'
     },
+    elInlineBlock: {
+        display: 'inline-block'
+    },
     textCenter: {
         textAlign: 'center'
-    }
+    },
+    col: {
+        // paddingLeft: '1rem !important',
+        // paddingRight: '1rem !important'
+    },
+    container: {
+        paddingLeft: '15px',
+        paddingRight: '15px'
+    },
+
 });
 
 export const logoStyles = StyleSheet.create({
@@ -52,19 +64,13 @@ export const logoStyles = StyleSheet.create({
     },
     after: {
 
-    }
+    },
+
 });
 
 export const navStyles = StyleSheet.create({
-    nav: {
-        display: 'flex',
-        justifyContent: 'flex-end',
-        alignItems: 'center',
-        marginRight: '-15px'
-    },
-    navLinks: {
-        padding: '15px',
-    }
+
+
 });
 
 export const formStyles = StyleSheet.create({

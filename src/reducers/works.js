@@ -217,7 +217,7 @@ const initialState = [
         description: 'Blog template',
         text:        `Create HTML template use HTML5, CSS3, JS. Create WP template and integration HTML template.
                       Create custom post type, create custom taxonomy`,
-        searchWords: `WP, wp, wordpress, Wordpress, php, PHP
+        searchWords: `WP, wp, wordpress, Wordpress, php, PHP, MySQL, mysql,
                       HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap`,
     },
     {
@@ -242,9 +242,9 @@ const initialState = [
         id:          '15',
         mainImgSrc:  '/assets/images/works/15/main.png',
         galleryImgSrc:
-            [
+        [
 
-            ],
+        ],
         webPath:     'https://launchmaps.com/',
         link:        '/work/15/',
         title:       'Launchmaps',
@@ -252,6 +252,21 @@ const initialState = [
         text:        'Extend some options on backend',
         searchWords: `php, PHP, MySQL, mysql, ajax, AJAX
                       JS, js, Javascript, javascript`,
+    },
+    {
+        id:          '16',
+        mainImgSrc:  '/assets/images/works/16/main.png',
+        galleryImgSrc:
+        [
+
+        ],
+        webPath:     '',
+        link:        '/work/16/',
+        title:       'Newspoint',
+        description: 'Codeignoter template',
+        text:        'Create simple blog on Codeigniter',
+        searchWords: `php, PHP, MySQL, mysql
+                      HTML5, html5, HTML, html, JS, js, Javascript, javascript`,
     },
 ];
 

@@ -17,7 +17,7 @@ class About extends Component {
             <div className={css(fontStyles.fontBody)}>
                 <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(aboutStyles.title)}>About</h2>
 
-                <Grid>
+                <Grid className={css(appStyles.container)}>
                     <Row>
                         <Col xs={12}>
                             <p className={css(appStyles.textCenter)}>
@@ -26,13 +26,13 @@ class About extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={12} sm={4} md={6} lg={6}>
+                        <Col xs={12} sm={12} md={6} lg={6}>
                             <h3 className={css(fontStyles.fontPageTitleLevel2)}>Education :</h3>
                             <div>
                                 <Education />
                             </div>
                         </Col>
-                        <Col xs={12} sm={4} md={6} lg={6}>
+                        <Col xs={12} sm={12} md={6} lg={6}>
                             <h3 className={css(fontStyles.fontPageTitleLevel2)}>Experience :</h3>
                             <div>
                                 <Experience />

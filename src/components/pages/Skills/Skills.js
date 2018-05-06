@@ -79,27 +79,25 @@ class Skills extends Component {
     render() {
         return (
             <div className={css(fontStyles.fontBody)}>
-                <Grid>
+                <Grid className={css(appStyles.container)}>
                     <Row>
-                        <Col xs={12} sm={4} md={6} lg={12}>
+                        <Col xs={12} sm={1} md={2} lg={3} />
+                        <Col xs={12} sm={10} md={8} lg={6}>
                             <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(skillsStyles.title)}>Skills</h2>
                             <p className={css(appStyles.textCenter)}>
                                 This is my skills in web development
                             </p>
                         </Col>
+                        <Col xs={12} sm={1} md={2} lg={3} />
                     </Row>
                     <Row>
-                        <Col xs={12} sm={1} md={2} lg={3}>
-
-                        </Col>
+                        <Col xs={12} sm={1} md={2} lg={3} />
                         <Col xs={12} sm={10} md={8} lg={6}>
                             <div className={css(skillsStyles.skillItemsLevel0)}>
                                 {this.createList()}
                             </div>
                         </Col>
-                        <Col xs={12} sm={1} md={2} lg={3}>
-
-                        </Col>
+                        <Col xs={12} sm={1} md={2} lg={3} />
                     </Row>
                 </Grid>
             </div>

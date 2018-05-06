@@ -8,24 +8,28 @@ import { css } from 'aphrodite/no-important';
 import fontStyles   from '../../../pages/App/FontStyles';
 import { appStyles }   from '../../../pages/App/AppStyles';
 
+import { Grid, Row, Col } from 'react-flexbox-grid-aphrodite';
+
 class ContactsItems extends Component {
 
     render() {
         return (
             <div className={css(fontStyles.fontBody)}>
                 <div className={css(contactsItemsStyles.contacts)}>
-                    <table>
-                        <tbody>
+                    {/*<table>*/}
+                        <ul className={css(contactsItemsStyles.contactsList)}>
                             {this.props.contactsItemsArray.map((item, index) =>
-                            <tr>
-                                <td className={css(contactsItemsStyles.col1)}>{item.title}:</td>
-                                <td>
-                                    <span>{item.value}</span>
-                                </td>
-                            </tr>
+                            <li>
+                                <Row>
+                                    <Col xs={12} sm={12} md={3} lg={2} className={css(contactsItemsStyles.col1)}>{item.title}:</Col>
+                                    <Col xs={12} sm={12} md={9} lg={10}>
+                                        <span>{item.value}</span>
+                                    </Col>
+                                </Row>
+                            </li>
                             )}
-                        </tbody>
-                    </table>
+                        </ul>
+                    {/*</table>*/}
                 </div>
             </div>
         );

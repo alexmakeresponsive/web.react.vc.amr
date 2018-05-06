@@ -12,8 +12,8 @@ class SocialNetworks extends Component {
 
     render() {
         return (
-            <div className={css(fontStyles.fontBody)}>
-                <div>
+            <div className={css(fontStyles.fontBody) + ' ' + css(socialNetworks.componentWrapper)}>
+                <div className={css(socialNetworks.itemsWrapper)}>
                     {this.props.socialNetworksArray.map((item, index) =>
                     <a target="_blank" className={css(socialNetworks.item)} href={item.webPath}>
                         <i className={item.iconStyleClass + ' ' + css(socialNetworks.icon)} />

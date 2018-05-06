@@ -20,7 +20,7 @@ class Work extends Component {
     render() {
         return (
             <div className={css(fontStyles.fontBody)}>
-                <Grid>
+                <Grid className={css(appStyles.container)}>
                     <Row>
                         <Col xs={3} />
                         <Col xs={6}>
@@ -37,7 +37,7 @@ class Work extends Component {
                     </Row>
                     <Row>
                         {this.props.work.galleryImgSrc.map((item, index) =>
-                            <Col lg={6} key={index} className={css(workStyles.itemWrapper)}>
+                            <Col xs={12} sm={12} md={6} lg={6} key={index} className={css(workStyles.itemWrapper)}>
                                 <div>
                                     <div className={css(workStyles.imgWrapper)}>
                                         <img className={css(workStyles.img)} src={item} alt=""/>

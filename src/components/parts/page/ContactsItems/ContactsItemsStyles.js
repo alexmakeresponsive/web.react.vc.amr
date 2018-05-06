@@ -9,7 +9,18 @@ export const contactsItemsStyles = StyleSheet.create({
         lineHeight: '24px'
     },
     contacts: {
-        lineHeight: '32px'
+        lineHeight: '32px',
+
+        '@media (max-width: 767px)': {
+            textAlign: 'center'
+        }
+    },
+    contactsList: {
+        marginBottom: 30,
+
+        '@media (max-width: 767px)': {
+            listStyle: 'none'
+        }
     },
     col1: {
         paddingRight: 15

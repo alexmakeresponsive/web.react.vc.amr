@@ -15,7 +15,7 @@ class Contacts extends Component {
     render() {
         return (
             <div className={css(fontStyles.fontBody)}>
-                <Grid>
+                <Grid className={css(appStyles.container)}>
                     <Row>
                         <Col xs={12}>
                             <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(contactsStyles.title)}>Contacts</h2>
@@ -25,13 +25,19 @@ class Contacts extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={12} sm={4} md={6} lg={6}>
-                            <h3 className={css(fontStyles.fontPageTitleLevel2)}>Social :</h3>
-                            <SocialNetworks />
+                        <Col xs={12} sm={6} md={6} lg={6}>
+                            <h3 className={css(fontStyles.fontPageTitleLevel2) + ' ' + css(contactsStyles.colTitle)}>Social :</h3>
+                            <div className={css(contactsStyles.colBody)}>
+                                <SocialNetworks />
+                            </div>
                         </Col>
-                        <Col xs={12} sm={4} md={6} lg={6}>
-                            <h3 className={css(fontStyles.fontPageTitleLevel2)}>Other :</h3>
-                            <ContactsItems />
+                        <Col xs={12} sm={6} md={6} lg={6}>
+                            <div className={css(contactsStyles.itemsWrapp)}>
+                                <h3 className={css(fontStyles.fontPageTitleLevel2) + ' ' + css(contactsStyles.colTitle)}>Other :</h3>
+                                <div className={css(contactsStyles.colBody)}>
+                                    <ContactsItems />
+                                </div>
+                            </div>
                         </Col>
                     </Row>
                 </Grid>

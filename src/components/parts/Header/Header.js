@@ -23,23 +23,27 @@ class Header extends Component {
         return (
             <div className={css(fontStyles.font_1)}>
             <div className={css(headerStyles.header)}>
-                <Grid>
-                    <Row>
-                        <Col  xs={12} sm={4} md={6} lg={4} className={css(fontStyles.font_2)}>
-                            <a href="/home/" className={css(appStyles.elBlock) + ' ' + css(appStyles.links)}>
-                            <div className={css(appStyles.logo)}>
-                                <span className={css(logoStyles.before)}>-</span>
-                                <span className={css(logoStyles.logoBody)}>Must Have<br/>Responsive</span>
-                                <span className={css(logoStyles.after)}>-</span>
+                <Grid className={css(appStyles.container)}>
+                    <Row className={css(headerStyles.headerRow)}>
+                        <Col  xs={12} sm={5} md={6} lg={4} >
+                            <div className={css(fontStyles.font_2) + ' ' + css(headerStyles.col1Container)}>
+                                <a href="/home/" className={css(appStyles.elInlineBlock) + ' ' + css(appStyles.links) + ' ' + css(headerStyles.logoWrapp)}>
+                                    <div className={css(appStyles.logo)}>
+                                        <span className={css(logoStyles.before)}>-</span>
+                                        <span className={css(logoStyles.logoBody)}>Must Have<br/>Responsive</span>
+                                        <span className={css(logoStyles.after)}>-</span>
+                                    </div>
+                                </a>
                             </div>
-                            </a>
                         </Col>
-                        <Col  xs={12} sm={8} md={6} lg={8} className={css(headerStyles.navCol)}>
-                            <nav className={css(navStyles.nav)}>
-                            {this.props.items.map((item, index) =>
-                                <a className={css(appStyles.links) + ' ' + css(navStyles.navLinks)} href={item.link} key={index}>{item.label}</a>
-                            )}
-                            </nav>
+                        <Col  xs={12} sm={7} md={6} lg={8}>
+                            <div className={css(fontStyles.font_1) + ' ' + css(headerStyles.col2Container)}>
+                                <nav className={css(headerStyles.nav)}>
+                                {this.props.items.map((item, index) =>
+                                    <a className={css(appStyles.links) + ' ' + css(headerStyles.navLinks)} href={item.link} key={index}>{item.label}</a>
+                                )}
+                                </nav>
+                            </div>
                         </Col>
 
                     </Row>

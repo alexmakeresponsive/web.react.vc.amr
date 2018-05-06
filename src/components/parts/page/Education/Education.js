@@ -8,7 +8,7 @@ import { css } from 'aphrodite/no-important';
 import { educationStyles }   from './EducationStyles';
 
 import fontStyles   from '../../../pages/App/FontStyles';
-// import { aboutStyles }   from '../../../pages/About/AboutStyles';
+import { aboutStyles }   from '../../../pages/About/AboutStyles';
 // import { appStyles }   from '../../../pages/App/AppStyles';
 
 class Education extends Component {
@@ -16,7 +16,7 @@ class Education extends Component {
     render() {
         return (
             <div className={css(fontStyles.fontBody)}>
-                <ul>
+                <ul className={css(aboutStyles.listsAbout)}>
                     {this.props.educationArray.map((item, index) =>
                         <li key={index} className={css(educationStyles.elList)}>
                             <div >

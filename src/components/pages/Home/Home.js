@@ -14,7 +14,7 @@ class Home extends Component {
         return (
             <div className={css(fontStyles.fontBody)}>
                 <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(homeStyles.title)}>Hello!</h2>
-                <Grid>
+                <Grid className={css(appStyles.container)}>
                     <Row>
                         <Col xs={12}>
                             <p className={css(appStyles.textCenter)}>
