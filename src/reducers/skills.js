@@ -106,6 +106,7 @@ const initialState = {
         collection:
         [
             'Yii 1',
+            'Codeigniter',
         ]
     }
     ,

@@ -10,10 +10,14 @@ const initialState = [
             '/assets/images/works/1/gallery/4.png',
             '/assets/images/works/1/gallery/5.png',
         ],
+        webPath:     '',
         link:        '/work/1/',
-        title:       'Craigs WP Template',
-        description: 'Create Wordpress template',
-        text:        'My work with this project is ...',
+        title:       'Craigs',
+        description: 'Wordpress template',
+        text:        `Create HTML template use HTML5, CSS3, JS. Create WP template and integration HTML template.
+                      Create custom post type, create custom taxonomy`,
+        searchWords: `WP, wp, wordpress, Wordpress, php, PHP
+                      HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap`,
     },
     {
         id:          '2',
@@ -26,11 +30,14 @@ const initialState = [
             '/assets/images/works/2/gallery/4.png',
             '/assets/images/works/2/gallery/5.png',
         ],
+        webPath:     '',
         link:        '/work/2/',
-        title:       'Nango WP Template',
-        description: 'Create Wordpress template',
-        text:        `Creat HTML template use HTML5, CSS3, JS. Create WP template and integration HTML template.
+        title:       'Nango',
+        description: 'Wordpress template',
+        text:        `Create HTML template use HTML5, CSS3, JS. Create WP template and integration HTML template.
                       Create custom post type, create custom taxonomy`,
+        searchWords: `WP, wp, wordpress, Wordpress, php, PHP
+                      HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap`,
     },
 
     {
@@ -46,10 +53,13 @@ const initialState = [
             '/assets/images/works/10/gallery/6.png',
             '/assets/images/works/10/gallery/7.png',
         ],
+        webPath:     '',
         link:        '/work/10/',
         title:       'TeaShop HTML template',
         description: 'Shop template',
-        text:        'My work with this project is ...',
+        text:        'Create HTML template use HTML5, CSS3, JS.',
+        searchWords: `WP, wp, wordpress, Wordpress, php, PHP
+                      HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap`,
     },
     {
         id:          '4',
@@ -63,10 +73,12 @@ const initialState = [
             '/assets/images/works/4/gallery/5.png',
             '/assets/images/works/4/gallery/6.png',
         ],
+        webPath:     'http://evenza.ru/',
         link:        '/work/4/',
         title:       'Evenza HTML template',
         description: 'Shop template',
-        text:        'My work with this project is ...',
+        text:        'Create HTML template use HTML5, CSS3, JS.',
+        searchWords: 'HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap, ajax, AJAX',
     },
     {
         id:          '5',
@@ -78,10 +90,12 @@ const initialState = [
             '/assets/images/works/5/gallery/3.png',
             '/assets/images/works/5/gallery/4.png',
         ],
+        webPath:     'http://gardenstar.ru/',
         link:        '/work/5/',
         title:       'GardenStar HTML template',
         description: 'Blog template',
-        text:        'My work with this project is ...',
+        text:        'Create HTML template use HTML5, CSS3, JS.',
+        searchWords: 'HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap',
     },
 
     {
@@ -95,10 +109,13 @@ const initialState = [
             '/assets/images/works/9/gallery/4.png',
             '/assets/images/works/9/gallery/5.png',
         ],
+        webPath:     '',
         link:        '/work/9/',
-        title:       'Schon HTML template',
-        description: 'Shop template',
-        text:        'My work with this project is ...',
+        title:       'Schon',
+        description: 'Magento 1 template',
+        text:        'Create HTML template use HTML5, CSS3, JS. integration it in magento 1',
+        searchWords: `Magento, magento, php, PHP
+                      HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap`,
     },
     {
         id:          '7',
@@ -107,10 +124,12 @@ const initialState = [
         [
 
         ],
+        webPath:     'http://bitlum.io/',
         link:        '/work/7/',
         title:       'Site about cryptocurrency',
         description: 'Blog template',
-        text:        'My work with this project is ...',
+        text:        'Create HTML template use HTML5, CSS3, JS.',
+        searchWords: 'HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap',
     },
     {
         id:          '8',
@@ -119,10 +138,12 @@ const initialState = [
         [
 
         ],
+        webPath:     'http://www.dilijansdv.ru/',
         link:        '/work/8/',
         title:       'PHP mail',
         description: 'Blog template',
-        text:        'My work with this project is ...',
+        text:        'Debug PHP Mailer',
+        searchWords: 'php, PHP, mail, Mail',
     },
     {
         id:          '6',
@@ -131,10 +152,13 @@ const initialState = [
         [
 
         ],
+        webPath:     'http://shtab2018.opmoscow.ru/',
         link:        '/work/6/',
-        title:       'ShtabOpmoscow 2018 HTML template',
+        title:       'Shtab Moscow 2018 HTML template',
         description: 'Blog template',
-        text:        'My work with this project is ...',
+        text:        'Create HTML template use HTML5, CSS3, JS.',
+        searchWords: `HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap
+                      Telegram, telegram, Youtube, youtube`,
     },
     {
         id:          '3',
@@ -143,10 +167,12 @@ const initialState = [
         [
 
         ],
+        webPath:     '',
         link:        '/work/3/',
-        title:       'HTML plug',
-        description: 'Create for maintenance mode',
-        text:        'My work with this project is ...',
+        title:       'Plug',
+        description: 'HTML Template',
+        text:        'Create HTML template use HTML5, CSS3, JS.',
+        searchWords: 'HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap',
     },
     {
         id:          '11',
@@ -155,10 +181,13 @@ const initialState = [
         [
 
         ],
+        webPath:     'http://careerwoman.ru/',
         link:        '/work/11/',
         title:       'WP template',
         description: 'Blog template',
-        text:        'My work with this project is ...',
+        text:        'Customize WP template',
+        searchWords: `WP, wp, wordpress, Wordpress, php, PHP
+                      HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap`,
     },
     {
         id:          '12',
@@ -167,10 +196,13 @@ const initialState = [
         [
 
         ],
+        webPath:     'https://www.koltorahonline.com/',
         link:        '/work/12/',
         title:       'Magento 1 template',
         description: 'Shop template',
-        text:        'My work with this project is ...',
+        text:        'Fix bugs with javascript',
+        searchWords: `Magento, magento, php, PHP
+                      HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap`,
     },
     {
         id:          '13',
@@ -179,10 +211,14 @@ const initialState = [
         [
 
         ],
+        webPath:     '',
         link:        '/work/13/',
         title:       'White Plains Hospital WP template',
         description: 'Blog template',
-        text:        'My work with this project is ...',
+        text:        `Create HTML template use HTML5, CSS3, JS. Create WP template and integration HTML template.
+                      Create custom post type, create custom taxonomy`,
+        searchWords: `WP, wp, wordpress, Wordpress, php, PHP
+                      HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap`,
     },
     {
         id:          '14',
@@ -194,10 +230,28 @@ const initialState = [
             '/assets/images/works/14/gallery/3.png',
             '/assets/images/works/14/gallery/6.png',
         ],
+        webPath:     '',
         link:        '/work/14/',
         title:       'Magento 2 template',
         description: 'Shop template',
-        text:        'My work with this project is ...',
+        text:        'Create HTML template use HTML5, CSS3, JS. integration it in magento 2',
+        searchWords: `Magento, magento, php, PHP
+                      HTML5, html5, HTML, html, JS, js, Javascript, javascript, flexbox, bootstrap, Bootstrap`,
+    },
+    {
+        id:          '15',
+        mainImgSrc:  '/assets/images/works/15/main.png',
+        galleryImgSrc:
+            [
+
+            ],
+        webPath:     'https://launchmaps.com/',
+        link:        '/work/15/',
+        title:       'Launchmaps',
+        description: 'online service',
+        text:        'Extend some options on backend',
+        searchWords: `php, PHP, MySQL, mysql, ajax, AJAX
+                      JS, js, Javascript, javascript`,
     },
 ];
 
