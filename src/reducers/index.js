@@ -7,6 +7,8 @@ import experience from './experience';
 import skills from './skills';
 import works  from './works';
 import worksFind  from './worksFind';
+import socialnetworks  from './socialnetworks';
+import contactsitems  from './contactsitems';
 
 
 export default combineReducers({
@@ -15,5 +17,7 @@ export default combineReducers({
     skills,
     worksFind,
     education,
-    experience
+    experience,
+    socialnetworks,
+    contactsitems,
 })
