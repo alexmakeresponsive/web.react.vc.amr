@@ -25,6 +25,11 @@ export default StyleSheet.create({
         fontSize: 32,
         textTransform: 'uppercase'
     },
+    font_3: {
+        fontFamily: [FontMontserratRegular, "sans-serif"],
+        fontSize: 14,
+        textTransform: ''
+    },
     fontLogo: {
         fontFamily: [FontMontserratBold, "sans-serif"],
         fontSize: 48,
@@ -33,6 +38,8 @@ export default StyleSheet.create({
     fontPageMainTitle: {
         fontFamily: [FontMontserratBold, "sans-serif"],
         fontSize: 36,
+        color: '#2c2c2c',
+
     },
     fontPageTitleLevel2: {
         fontFamily: [FontMontserratBold, "sans-serif"],

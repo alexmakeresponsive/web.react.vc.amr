@@ -1,30 +1,112 @@
 //skillItemLevel0Value
 const initialState = {
     //skillItemLevel1
-    adminSkills:
+    webEnironment:
     //skillItemLevel1Value
     {
-        title: 'System administration',
-        collection:
-        [
-            //skillItemLevel2
-            'Ubuntu',
-            'Debian',
-            'Fedora',
-            'Mac OS X',
-        ]
+        title: 'Web Environment',
+        collection: {
+            os:
+            {
+                title: 'Operating systems',
+                collection:
+                    [
+                        //skillItemLevel2
+                        'Ubuntu',
+                        'Debian',
+                        'Fedora',
+                        'Mac OS X',
+                    ]
+            },
+            vs:
+            {
+                title: 'Virtualization systems',
+                collection:
+                    [
+                        //skillItemLevel2
+                        'Vagrant',
+                        'Docker',
+                    ]
+            },
+            webServers:
+            {
+                title: 'Web servers',
+                collection:
+                    [
+                        //skillItemLevel2
+                        'Apache',
+                    ]
+            },
+            versionControlSystems: {
+                title: 'Version control systems',
+                collection:
+                    [
+                        'Git',
+                    ],
+            },
+            dbManagement: {
+                title: 'Management database apps',
+                collection:
+                    [
+                        'Adminer', 'PHPMyAdmin', 'DBeaver', 'MySQL Workbench', 'Navicat'
+                    ],
+            },
+            versionControlPrograms: {
+                title: 'Version control apps',
+                collection:
+                    [
+                        'Github Desktop', 'Sourcetree',
+                    ],
+            },
+            graphicProgramms: {
+                title: 'Graphic apps',
+                collection:
+                    [
+                        'Adobe PhotoShop', 'Adobe Illustrator', 'Sketch',
+                    ],
+            },
+        }
     },
     //skillItemLevel1
-    databasesSkills:
+    backendSkills:
+    //skillItemLevel1Value
     {
-        title: 'Databases',
-        collection:
-        //skillItemLevel1Value
-        [
+        title: 'Backend',
+        collection: {
             //skillItemLevel2
-            'MySQL'
-            //skillItemLevel2Value === skillItemLevel2
-        ],
+            languages: {
+                title: 'Languages',
+                collection:
+                //skillItemLevel2Value
+                [
+                    //skillItemLevel3
+                    'SQL', 'PHP',
+                ],
+            },
+            templateEngines: {
+                title: 'Template Engines',
+                collection:
+                    [
+                        'Smarty',
+                    ]
+            },
+            libs: {
+                title: 'Libraries',
+                collection:
+                    [
+                        'DB Simple',
+                        'PHP Mailer',
+                    ]
+            },
+            frameworks: {
+                title: 'Frameworks',
+                collection:
+                    [
+                        'Yii 1',
+                        'Codeigniter',
+                    ]
+            }
+        }
     },
     //skillItemLevel1
     frontendSkills:
@@ -40,15 +122,33 @@ const initialState = {
                 [
                     //skillItemLevel3
                     'HTML5',
-                    'CSS3',
-                    'LESS',
-                    'SASS',
-                    'Stylus',
-                    'SVG',
                 ],
             },
-            javascript: {
-                title: 'Javascript',
+            //skillItemLevel2
+            styles: {
+                title: 'Styles',
+                collection:
+                //skillItemLevel2Value
+                    [
+                        //skillItemLevel3
+                        'CSS3',
+                        'LESS',
+                        'SASS',
+                        'Stylus',
+                    ],
+            },
+            //skillItemLevel2
+            languages: {
+                title: 'Languages',
+                collection:
+                //skillItemLevel2Value
+                    [
+                        //skillItemLevel3
+                        'JavaScript',
+                    ],
+            },
+            module: {
+                title: 'Module patterns',
                 collection:
                 [
                     'AMD',
@@ -56,67 +156,62 @@ const initialState = {
                     'CommonJS',
                     'ES6 modules',
                 ]
+            },
+            libsjs: {
+                title: 'JavaScript libraries',
+                collection:
+                [
+                    'jQuery',
+                    'Lodash',
+                    'Underscore',
+                    'Prototype',
+                    'Knockout',
+                    'RequireJS',
+                    'React',
+                ]
+            },
+            libscss: {
+                title: 'JavaScript and CSS libraries',
+                collection:
+                [
+                    'Bootstrap 3',
+                    'Bootstrap 4',
+                    'Semantic UI',
+                ]
+            },
+            taskRunners: {
+                title: 'Task runners',
+                collection:
+                [
+                    'Grunt',
+                    'Gulp',
+                ]
+            },
+            bundlers: {
+                title: 'Bundlers',
+                collection:
+                [
+                    'Webpack',
+                ]
             }
         }
-    },
-    envSkills: {
-        title: 'Environment',
-        collection:
-        [
-            'Grunt',
-            'Gulp',
-            'Webpack',
-            'Docker'
-        ],
-    },
-    programmLanguafeSkills:
-    {
-        title: 'Programm languages',
-        collection: {
-            backend: {
-                title: 'Backend',
-                collection:
-                [
-                    'PHP',
-                ],
-            },
-            frontend:
-            {
-                title: 'Frontend',
-                collection:
-                [
-                    'JavaScript',
-                ],
-            }
-        },
     },
     cmsSkills: {
         title: 'CMS',
         collection:
         [
             'Wordpress',
-            'Wordpress + Woocommerce',
             'Magento 1',
             'Magento 2',
             'OpenCart',
         ]
     },
-    frameworksSkills: {
-        title: 'Frameworks',
+    apiSkills: {
+        title: 'API',
         collection:
         [
-            'Yii 1',
-            'Codeigniter',
-        ]
-    }
-    ,
-    libsSkills: {
-        title: 'Librares',
-        collection:
-        [
-            'NodeJS',
-            'ReactJS',
-            'RequireJS',
+            'YouTube',
+            'Google Maps',
         ]
     }
 };

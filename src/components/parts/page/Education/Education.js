@@ -9,31 +9,22 @@ import { educationStyles }   from './EducationStyles';
 
 import fontStyles   from '../../../pages/App/FontStyles';
 import { aboutStyles }   from '../../../pages/About/AboutStyles';
-// import { appStyles }   from '../../../pages/App/AppStyles';
+import { appStyles, textStyles }   from '../../../pages/App/AppStyles';
 
 class Education extends Component {
 
     render() {
         return (
             <div className={css(fontStyles.fontBody)}>
-                <ul className={css(aboutStyles.listsAbout)}>
+                <ul className={css(aboutStyles.list) + ' ' + css(textStyles.list)}>
                     {this.props.educationArray.map((item, index) =>
-                        <li key={index} className={css(educationStyles.elList)}>
+                        <li key={index} className={css(aboutStyles.listItem) + ' ' + css(textStyles.listItem)}>
                             <div >
-                                <div>
-                                    <b>{item.degree.level}</b>
-                                </div>
                                 <div>
                                     <b>{item.degree.name}</b>
                                 </div>
-                                <div>
+                                <div className={css(aboutStyles.listItemSchool)}>
                                     <span>{item.school}</span>
-                                </div>
-                                <div>
-                                    {item.faculty}
-                                </div>
-                                <div>
-                                    {item.specialty}
                                 </div>
                             </div>
                         </li>

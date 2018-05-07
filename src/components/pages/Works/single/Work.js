@@ -5,7 +5,7 @@ import { css } from 'aphrodite/no-important';
 
 import { Grid, Row, Col } from 'react-flexbox-grid-aphrodite';
 
-import { appStyles, formStyles }   from '../../App/AppStyles';
+import { appStyles, textStyles }   from '../../App/AppStyles';
 import fontStyles   from '../../../pages/App/FontStyles';
 import { workStyles } from './WorkStyles';
 
@@ -14,36 +14,41 @@ class Work extends Component {
         if (this.props.work.webPath === '') {
             return '';
         }
-        return <a target="_blank" href={this.props.work.webPath}>- Show it on production -</a>;
+        return (
+            <p className={css(textStyles.paragraphCenter)}>
+                <a target="_blank" href={this.props.work.webPath}>- Show it on production -</a>;
+            </p>
+        );
     };
 
     render() {
         return (
-            <div className={css(fontStyles.fontBody)}>
+            <div className={css(fontStyles.fontBody) + ' ' + css(appStyles.componentBody)}>
                 <Grid className={css(appStyles.container)}>
                     <Row>
                         <Col xs={3} />
-                        <Col xs={6}>
-                            <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(workStyles.title)}>{this.props.work.title}</h2>
-                            <div className={css(appStyles.textCenter)}>
-                                {this.renderProductionLink()}
-                            </div>
-                            <p className={css(appStyles.textCenter)}>
-                                {this.props.work.text}
-                            </p>
-
+                        <Col xs={6} className={css(appStyles.lastParagraphsClean)}>
+                            <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(textStyles.titleCenter)}>{this.props.work.title}</h2>
+                            {this.renderProductionLink()}
                         </Col>
                         <Col xs={3} />
                     </Row>
                     <Row>
+                        <Col xs={12} className={css(appStyles.contentCol) + ' ' +css(appStyles.lastParagraphsClean)}>
+                            <p className={css(textStyles.paragraphCenter)}>
+                                {this.props.work.text}
+                            </p>
+                        </Col>
+                    </Row>
+                    <Row className={css(workStyles.itemsWrapper)}>
                         {this.props.work.galleryImgSrc.map((item, index) =>
-                            <Col xs={12} sm={12} md={6} lg={6} key={index} className={css(workStyles.itemWrapper)}>
-                                <div>
-                                    <div className={css(workStyles.imgWrapper)}>
-                                        <img className={css(workStyles.img)} src={item} alt=""/>
-                                    </div>
+                        <Col xs={12} sm={12} md={6} lg={6} key={index} className={css(workStyles.itemWrapper)}>
+                            <div>
+                                <div className={css(workStyles.imgWrapper)}>
+                                    <img className={css(workStyles.img)} src={item} alt=""/>
                                 </div>
-                            </Col>
+                            </div>
+                        </Col>
                         )}
                     </Row>
                 </Grid>

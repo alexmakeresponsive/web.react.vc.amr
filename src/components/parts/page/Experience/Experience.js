@@ -9,27 +9,26 @@ import { experienceStyles }   from './ExperienceStyles';
 
 import fontStyles   from '../../../pages/App/FontStyles';
 import { aboutStyles }   from '../../../pages/About/AboutStyles';
-// import { appStyles }   from '../../../pages/App/AppStyles';
+import { appStyles, textStyles }   from '../../../pages/App/AppStyles';
 
 class Experience extends Component {
 
     render() {
         return (
-            <div className={css(fontStyles.fontBody)}>
-                <ul className={css(aboutStyles.listsAbout)}>
+            <div className={css(fontStyles.fontBody) + ' ' + css(appStyles.componentBody)}>
+                <ul className={css(aboutStyles.list) + ' ' + css(textStyles.list)}>
                     {this.props.experiencenArray.map((item, index) =>
-                        <li key={index} className={css(experienceStyles.elList)}>
+                        <li key={index} className={css(aboutStyles.listItem) + ' ' + css(textStyles.listItem)}>
                             <div >
                                 <div>
                                     <b>{item.function}</b>
                                 </div>
-                                <div>
+                                <div className={css(aboutStyles.listItemPeriod)}>
                                     <b>{item.period}</b>
                                 </div>
                                 <div>
                                     <p>{item.description}</p>
                                 </div>
-
                             </div>
                         </li>
                     )}

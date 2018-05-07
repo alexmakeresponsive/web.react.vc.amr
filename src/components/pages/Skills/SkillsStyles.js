@@ -2,8 +2,7 @@ import { StyleSheet } from 'aphrodite';
 
 export const skillsStyles = StyleSheet.create({
     title: {
-        color: '#2c2c2c',
-        textAlign: 'center'
+
     },
     skillPill: {
         display: 'inline-block',
@@ -14,9 +13,12 @@ export const skillsStyles = StyleSheet.create({
         marginRight: 5,
         marginBottom: 5
     },
-    skillItemsLevel0: {
+    skillItemsWrapper: {
+        marginBottom: -30,
         textAlign: 'center',
-        marginBottom: 30
+    },
+    skillItemsLevel0: {
+
     },
     skillItemsLevel1: {
         paddingLeft: 0,
@@ -26,6 +28,16 @@ export const skillsStyles = StyleSheet.create({
         marginBottom: 30
     },
     skillItemsLevel2: {
-        paddingLeft: 0
+        paddingLeft: 0,
+        // marginTop: '-15px'
+    },
+
+    skillTitleLevel1: {
+        display: 'block',
+        padding: '25px 0px'
+    },
+    skillTitleLevel2: {
+        display: 'block',
+        padding: '15px 0px'
     }
 });

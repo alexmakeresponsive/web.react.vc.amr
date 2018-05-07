@@ -7,7 +7,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid-aphrodite';
 
 import { css } from 'aphrodite/no-important';
 
-import { appStyles, formStyles }   from '../App/AppStyles';
+import { appStyles, formStyles, textStyles }   from '../App/AppStyles';
 import fontStyles   from '../../pages/App/FontStyles';
 import { worksStyles } from './WorksStyles';
 
@@ -37,18 +37,18 @@ class Works extends Component {
         // console.log('is it test store?', this.props.worksArray);
 
         return (
-            <div className={' ' + css(fontStyles.fontBody)}>
+            <div className={css(appStyles.componentBody) + ' ' + css(fontStyles.fontBody)}>
                 <Grid className={css(appStyles.container)}>
                     <Row>
-                        <Col xs={12}>
-                            <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(worksStyles.title)}>Works</h2>
-                            <p className={css(appStyles.textCenter)}>
+                        <Col xs={12} className={css(appStyles.lastParagraphsClean)}>
+                            <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(textStyles.titleCenter)}>Works</h2>
+                            <p className={css(textStyles.paragraphCenter)}>
                                 Here you see my works. Use this field for search words like "Wordpress" or "PHP" :
                             </p>
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={12}>
+                        <Col xs={12} className={css(appStyles.contentCol)}>
                             <div className={css(worksStyles.formWrapper)}>
                                 <input  className={css(formStyles.inputInline) + ' ' + css(worksStyles.inputSearch) + ' ' + css(fontStyles.fontFormInput)}
                                         type="text"
@@ -57,7 +57,7 @@ class Works extends Component {
                                 />
                                 <button className={css(formStyles.button) + ' ' + css(fontStyles.fontformButton)} type="submit" onClick={this.findWork.bind(this)} >Find</button>
                             </div>
-                            <Row>
+                            <Row className={css(worksStyles.itemsWrapper)}>
                                 {this.props.worksArray.map((item, index) =>
                                     <Col xs={12} sm={6} md={4} lg={4} key={index} className={css(worksStyles.itemWrapper) + ' COL'}>
                                         <div>

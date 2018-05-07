@@ -26,12 +26,10 @@ class Header extends Component {
                 <Grid className={css(appStyles.container)}>
                     <Row className={css(headerStyles.headerRow)}>
                         <Col  xs={12} sm={12} md={6} lg={4} >
-                            <div className={css(fontStyles.fontLogo) + ' ' + css(headerStyles.col1Container)}>
-                                <a href="/" className={css(appStyles.elInlineBlock) + ' ' + css(appStyles.links) + ' ' + css(headerStyles.logoWrapp)}>
-                                    <div className={css(appStyles.logo)}>
-                                        <span className={css(logoStyles.before)}>-</span>
-                                        <span className={css(logoStyles.logoBody)}>Must Have<br/>Responsive</span>
-                                        <span className={css(logoStyles.after)}>-</span>
+                            <div className={css(headerStyles.col1Container)}>
+                                <a href="/" className={css(logoStyles.logoWrapp) + ' ' + css(headerStyles.logoWrapp)}>
+                                    <div className={css(fontStyles.fontLogo) + ' ' + css(headerStyles.fontLogo)}>
+                                        Must Have Responsive
                                     </div>
                                 </a>
                             </div>

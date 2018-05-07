@@ -24,12 +24,7 @@ export const appStyles = StyleSheet.create({
         color: 'inherit',
         textDecoration: 'none'
     },
-    logo: {
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        padding: '15px',
-    },
+
 
     elBlock: {
         display: 'block'
@@ -48,35 +43,28 @@ export const appStyles = StyleSheet.create({
         paddingLeft: '15px',
         paddingRight: '15px'
     },
-
+    componentBody: {
+        overflow: 'hidden',
+        paddingBottom: '30px'
+    },
+    lastParagraphsClean: {
+        marginBottom: '-15px'
+    },
+    contentCol: {
+        paddingTop: '45px'
+    }
 });
 
 export const logoStyles = StyleSheet.create({
-    before: {
+    logoWrapp: {
         display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between'
-    },
-    logoBody: {
-        textAlign: 'center',
-        paddingLeft: '15px',
-        paddingRight: '15px',
-
-        '@media (max-width: 420px)': {
-            paddingLeft:  '8px',
-            paddingRight: '8px',
-        },
-    },
-    after: {
-
-    },
-
+        width: '320px',
+        textAlign: 'justify',
+        color: 'inherit',
+        textDecoration: 'none'
+    }
 });
 
-export const navStyles = StyleSheet.create({
-
-
-});
 
 export const formStyles = StyleSheet.create({
     input: {
@@ -95,3 +83,34 @@ export const formStyles = StyleSheet.create({
         color: 'white'
     }
 });
+
+
+export const textStyles = StyleSheet.create({
+    titleCenter: {
+        display: 'block',
+        textAlign: 'center',
+        padding: '15px 0px',
+        paddingTop: '45px'
+    },
+    underTitle: {
+        disolay: 'block'
+    },
+    paragraphCenter: {
+        display: 'block',
+        textAlign: 'center',
+        marginBottom: '15px'
+    },
+    titleLevel2: {
+        display: 'block',
+        marginBottom: '15px'
+    },
+    list: {
+        marginBottom: '-15px'
+    },
+    listItem: {
+        display: 'block',
+        marginBottom: '15px'
+    }
+});
+
+

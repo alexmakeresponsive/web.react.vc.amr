@@ -1,12 +1,13 @@
 const initialState = [
     {
-        id:          '1',
-        school:        'The Siberian State Automobile and Highway University (SibADI)',
-        faculty:       'Construction',
-        specialty: 'Construction',
-        degree: {
-            level: 'The Specialist Degree',
-            name: 'Construction of unique buildings and structures'
+        id:        '1',
+        school:    'The Siberian State Automobile and Highway University',
+        faculty:   'Engineering and construction institute',
+        specialty: 'Industrial and civil construction',
+        degree:
+        {
+            level: '',
+            name:  'Specialist for Research and design of buildings'
         }
     },
 ];

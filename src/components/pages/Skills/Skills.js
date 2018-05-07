@@ -5,7 +5,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid-aphrodite';
 import { css } from 'aphrodite/no-important';
 import fontStyles   from '../../pages/App/FontStyles';
 import { skillsStyles }   from '../../pages/Skills/SkillsStyles';
-import { appStyles }   from '../../pages/App/AppStyles';
+import { appStyles, textStyles }   from '../../pages/App/AppStyles';
 
 import { connect } from 'react-redux';
 
@@ -53,7 +53,7 @@ class Skills extends Component {
                     resultLevel1.push(
                         <div key={i1++} className={css(skillsStyles.skillItemsLevel2)}>
                             <div>
-                                <h4>{skillItemLevel2Value.title}</h4>
+                                <h4 className={css(skillsStyles.skillTitleLevel2)}>{skillItemLevel2Value.title}</h4>
                             </div>
                             <div >{resultLevel2}</div>
                         </div>
@@ -65,7 +65,7 @@ class Skills extends Component {
             resultLevel0.push(
                 <div key={i0++} className={css(skillsStyles.skillItemsLevel1)}>
                     <div>
-                        <h3>{skillItemLevel1Value.title}</h3>
+                        <h3 className={css(skillsStyles.skillTitleLevel1)}>{skillItemLevel1Value.title}</h3>
                     </div>
                     <div >{resultLevel1}</div>
                 </div>
@@ -78,13 +78,13 @@ class Skills extends Component {
 
     render() {
         return (
-            <div className={css(fontStyles.fontBody)}>
+            <div className={css(fontStyles.fontBody) + ' ' + css(appStyles.componentBody)}>
                 <Grid className={css(appStyles.container)}>
                     <Row>
                         <Col xs={12} sm={1} md={2} lg={3} />
-                        <Col xs={12} sm={10} md={8} lg={6}>
-                            <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(skillsStyles.title)}>Skills</h2>
-                            <p className={css(appStyles.textCenter)}>
+                        <Col xs={12} sm={10} md={8} lg={6} className={css(appStyles.lastParagraphsClean)}>
+                            <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(textStyles.titleCenter)}>Skills</h2>
+                            <p className={css(textStyles.paragraphCenter)}>
                                 This is my skills in web development
                             </p>
                         </Col>
@@ -92,8 +92,8 @@ class Skills extends Component {
                     </Row>
                     <Row>
                         <Col xs={12} sm={1} md={2} lg={3} />
-                        <Col xs={12} sm={10} md={8} lg={6}>
-                            <div className={css(skillsStyles.skillItemsLevel0)}>
+                        <Col xs={12} sm={10} md={8} lg={6} className={css(appStyles.contentCol)}>
+                            <div className={css(skillsStyles.skillItemsWrapper)}>
                                 {this.createList()}
                             </div>
                         </Col>

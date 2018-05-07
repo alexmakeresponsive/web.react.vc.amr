@@ -1,9 +1,9 @@
 import { StyleSheet } from 'aphrodite';
 
 export const workStyles = StyleSheet.create({
-    title: {
-        color: '#2c2c2c',
-        textAlign: 'center'
+    itemsWrapper: {
+        paddingTop: 30,
+        marginBottom: -30
     },
     itemWrapper: {
         textAlign: 'center',

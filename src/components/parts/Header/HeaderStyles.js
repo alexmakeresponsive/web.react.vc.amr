@@ -3,7 +3,8 @@ import { StyleSheet } from 'aphrodite';
 export const headerStyles = StyleSheet.create({
     header: {
         backgroundColor: '#2c2c2c',
-        color: 'white'
+        color: 'white',
+        padding: '15px 0px'
     },
     headerRow: {
         overflow: 'hidden'
@@ -15,11 +16,11 @@ export const headerStyles = StyleSheet.create({
         marginRight: '-15px',
         height: '100%',
 
-        '@media (max-width: 819px)': {
+        '@media (max-width: 991px)': {
             marginRight: '0px',
         },
 
-        '@media (max-width: 399px)': {
+        '@media (max-width: 420px)': {
             display: 'block',
             textAlign: 'center'
         }
@@ -28,25 +29,30 @@ export const headerStyles = StyleSheet.create({
     navLinks: {
         padding: '15px',
 
-        '@media (max-width: 399px)': {
+        '@media (max-width: 420px)': {
             display: 'block',
         }
     },
     logoWrapp: {
         marginLeft: '-15px',
 
-        '@media (max-width: 819px)': {
+        '@media (max-width: 991px)': {
             marginLeft: '0px',
-        }
+        },
+        '@media (max-width: 420px)': {
+            width: 290
+        },
+    },
+    fontLogo: {
+        '@media (max-width: 420px)': {
+            fontSize: 36,
+            textAlign: 'center'
+        },
     },
     col1Container: {
         '@media (max-width: 991px)': {
             display: 'flex',
             justifyContent: 'center'
-        },
-
-        '@media (max-width: 420px)': {
-            fontSize: 36,
         },
     },
     col2Container: {

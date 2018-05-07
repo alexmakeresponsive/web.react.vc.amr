@@ -6,19 +6,30 @@ import { css } from 'aphrodite/no-important';
 
 import fontStyles   from '../../pages/App/FontStyles';
 import { homeStyles }   from './HomeStyles';
-import { appStyles }   from '../../pages/App/AppStyles';
+import { appStyles, textStyles }   from '../../pages/App/AppStyles';
 
 
 class Home extends Component {
     render() {
         return (
-            <div className={css(fontStyles.fontBody)}>
-                <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(homeStyles.title)}>Hello!</h2>
+            <div className={css(fontStyles.fontBody) + ' ' + css(appStyles.componentBody)}>
                 <Grid className={css(appStyles.container)}>
                     <Row>
-                        <Col xs={12}>
-                            <p className={css(appStyles.textCenter)}>
-                                Welcome to my web card. You can know about my works and me here.
+                        <Col xs={12} className={css(appStyles.lastParagraphsClean)}>
+                            <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(textStyles.titleCenter)}>Hello!</h2>
+                            <p className={css(textStyles.paragraphCenter)}>
+                                Small summary
+                            </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={12} className={css(appStyles.lastParagraphsClean) + ' '+ css(appStyles.contentCol)}>
+                            <p className={css(textStyles.paragraphCenter)}>
+                                Welcome to my web card. My name is Alexandr and i have a <strong>1 year good experience</strong> for create HTML
+                                templates for CMS systems, such as Wordpress and Magento.
+                            </p>
+                            <p className={css(textStyles.paragraphCenter)}>
+                                More information about my works and me you can find in this web card.
                             </p>
                         </Col>
                     </Row>

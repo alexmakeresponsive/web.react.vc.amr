@@ -2,13 +2,13 @@ import { StyleSheet } from 'aphrodite';
 
 export const worksStyles = StyleSheet.create({
     title: {
-        color: '#2c2c2c',
-        textAlign: 'center'
+
     },
     formWrapper: {
         display: 'flex',
         justifyContent: 'center',
-        marginBottom: 60,
+        // paddingTop: '15px',
+        paddingBottom: '30px',
 
         '@media (max-width: 420px)': {
             flexDirection: 'column',
@@ -18,6 +18,10 @@ export const worksStyles = StyleSheet.create({
     itemWrapper: {
         textAlign: 'center',
         marginBottom: 45
+    },
+    itemsWrapper: {
+        marginBottom: -45,
+        overflow: 'hidden'
     },
     imgWrapper: {
         overflow: 'hidden',
