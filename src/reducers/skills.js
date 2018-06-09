@@ -163,11 +163,12 @@ const initialState = {
                 [
                     'jQuery',
                     'Lodash',
-                    'Underscore',
-                    'Prototype',
-                    'Knockout',
-                    'RequireJS',
-                    'React',
+                    'UnderscoreJS',
+                    'PrototypeJS',
+                    'KnockoutJS',
+                    'MustacheJS',
+                    'HoganJS',
+                    'ReactJS',
                 ]
             },
             libscss: {
@@ -192,6 +193,8 @@ const initialState = {
                 collection:
                 [
                     'Webpack',
+                    'Browserify',
+                    'RequireJS',
                 ]
             }
         }

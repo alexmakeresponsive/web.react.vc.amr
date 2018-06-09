@@ -1,18 +1,13 @@
 const initialState = [
     {
-        id:    '1',
-        title: 'Telegram',
-        value: 'musthaveresponsive',
-    },
-    {
         id:    '2',
         title: 'Skype',
-        value: 'musthaveresponsive',
+        value: 'alexmakeresponsive',
     },
     {
         id:    '3',
         title: 'E-mail',
-        value: 'musthaveresponsive@yandex.ru',
+        value: 'alexmakeresponsive@mail.ru',
     },
 ];
 

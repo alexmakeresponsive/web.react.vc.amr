@@ -26,12 +26,12 @@ class Work extends Component {
             <div className={css(fontStyles.fontBody) + ' ' + css(appStyles.componentBody)}>
                 <Grid className={css(appStyles.container)}>
                     <Row>
-                        <Col xs={3} />
-                        <Col xs={6} className={css(appStyles.lastParagraphsClean)}>
+                        <Col xs={12} sm={2}/>
+                        <Col xs={12} sm={8} className={css(appStyles.lastParagraphsClean)}>
                             <h2 className={css(fontStyles.fontPageMainTitle) + ' ' + css(textStyles.titleCenter)}>{this.props.work.title}</h2>
                             {this.renderProductionLink()}
                         </Col>
-                        <Col xs={3} />
+                        <Col xs={12} sm={2}/>
                     </Row>
                     <Row>
                         <Col xs={12} className={css(appStyles.contentCol) + ' ' +css(appStyles.lastParagraphsClean)}>

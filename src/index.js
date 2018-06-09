@@ -35,13 +35,16 @@ ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
             <div>
-                <App />
+                <div>
+                    <App />
+                </div>
+
                 <Route exact path='/' component={Home}/>
-                <Route path='/skills/' component={Skills}/>
-                <Route path='/about/' component={About}/>
-                <Route path='/works/' component={Works} works={store}/>
-                <Route path='/work/:id/' component={Work}/>
-                <Route path='/contacts/' component={Contacts}/>
+                <Route path='/skills' component={Skills}/>
+                <Route path='/about' component={About}/>
+                <Route path='/works' component={Works} works={store}/>
+                <Route path='/work/:id' component={Work}/>
+                <Route path='/contacts' component={Contacts}/>
             </div>
         </BrowserRouter>
     </Provider>,

@@ -9,7 +9,7 @@ const initialState = [
         id:             '3',
         networkName:    'Youtube',
         iconStyleClass: 'icon-youtube',
-        webPath:        'https://www.youtube.com/channel/UCQzdWwXyGwjnvEZuZijep0Q/featured?disable_polymer=1',
+        webPath:        'https://www.youtube.com/channel/UCCQz7m1Yk2L4dZG0t7xjvQA',
     },
 ];
 

@@ -11,6 +11,10 @@ import { appStyles, logoStyles, navStyles }    from '../../pages/App/AppStyles';
 import fontStyles   from '../../pages/App/FontStyles';
 
 
+import {
+    Link,
+} from 'react-router-dom'
+
 
 class Header extends Component {
 
@@ -27,18 +31,19 @@ class Header extends Component {
                     <Row className={css(headerStyles.headerRow)}>
                         <Col  xs={12} sm={12} md={6} lg={4} >
                             <div className={css(headerStyles.col1Container)}>
-                                <a href="/" className={css(logoStyles.logoWrapp) + ' ' + css(headerStyles.logoWrapp)}>
+                                <Link to="/" className={css(logoStyles.logoWrapp) + ' ' + css(headerStyles.logoWrapp)}>
                                     <div className={css(fontStyles.fontLogo) + ' ' + css(headerStyles.fontLogo)}>
-                                        Must Have Responsive
+                                        Alex Make Responsive
                                     </div>
-                                </a>
+                                </Link>
+
                             </div>
                         </Col>
                         <Col  xs={12} sm={12} md={6} lg={8}>
                             <div className={css(fontStyles.font_1) + ' ' + css(headerStyles.col2Container)}>
                                 <nav className={css(headerStyles.nav)}>
                                 {this.props.items.map((item, index) =>
-                                    <a className={css(appStyles.links) + ' ' + css(headerStyles.navLinks)} href={item.link} key={index}>{item.label}</a>
+                                    <Link className={css(appStyles.links) + ' ' + css(headerStyles.navLinks)} to={item.link} key={index}>{item.label}</Link>
                                 )}
                                 </nav>
                             </div>

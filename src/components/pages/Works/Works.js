@@ -12,6 +12,11 @@ import fontStyles   from '../../pages/App/FontStyles';
 import { worksStyles } from './WorksStyles';
 
 
+import {
+    Link,
+} from 'react-router-dom'
+
+
 
 class Works extends Component {
 
@@ -61,14 +66,14 @@ class Works extends Component {
                                 {this.props.worksArray.map((item, index) =>
                                     <Col xs={12} sm={6} md={4} lg={4} key={index} className={css(worksStyles.itemWrapper) + ' COL'}>
                                         <div>
-                                            <a className={css(appStyles.elBlock)} href={item.link}>
+                                            <Link className={css(appStyles.elBlock)} to={item.link}>
                                                 <div className={css(worksStyles.imgWrapper)}>
                                                     <img className={css(worksStyles.img)} src={item.mainImgSrc} alt=""/>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className={css(fontStyles.fontTitleItem)}>
-                                            <a className={css(appStyles.elBlock) + ' ' + css(appStyles.links) } href={item.link}>{item.title}</a>
+                                            <Link className={css(appStyles.elBlock) + ' ' + css(appStyles.links) } to={item.link}>{item.title}</Link>
                                         </div>
                                         <div>
                                             {item.description}
