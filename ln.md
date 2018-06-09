@@ -1,1 +1,0 @@
-ln -s /Volumes/data/web/works/Frontend/Libraries/React/_node_modules/CreateReactApp/node_modules /Volumes/data/web/works/Frontend/Libraries/React/Costumers/alexmakeresponsive.bitbucket.io/local/node_modules
