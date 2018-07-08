@@ -11,7 +11,7 @@ export const skillsStyles = StyleSheet.create({
         color: 'white',
         marginLeft: 5,
         marginRight: 5,
-        marginBottom: 5
+        marginBottom: 10
     },
     skillItemsWrapper: {
         marginBottom: -30,

@@ -1,6 +1,6 @@
 {
   "homepage": "https://alexmakeresponsive.bitbucket.io",
-  "name": "React: Simple SPA",
+  "name": "ReactSimpleSPA",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

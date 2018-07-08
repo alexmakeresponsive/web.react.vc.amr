@@ -35,6 +35,7 @@ const initialState = {
                     [
                         //skillItemLevel2
                         'Apache',
+                        'NGINX',
                     ]
             },
             versionControlSystems: {
@@ -80,14 +81,14 @@ const initialState = {
                 //skillItemLevel2Value
                 [
                     //skillItemLevel3
-                    'SQL', 'PHP',
+                    'SQL', 'PHP', 'JavaScript'
                 ],
             },
             templateEngines: {
                 title: 'Template Engines',
                 collection:
                     [
-                        'Smarty',
+                        'Smarty', 'EJS'
                     ]
             },
             libs: {
@@ -96,6 +97,10 @@ const initialState = {
                     [
                         'DB Simple',
                         'PHP Mailer',
+                        'Axios',
+                        'Cors',
+                        'Mongoose',
+                        'Body parser'
                     ]
             },
             frameworks: {
@@ -104,6 +109,15 @@ const initialState = {
                     [
                         'Yii 1',
                         'Codeigniter',
+                        'Express'
+                    ]
+            },
+            databases: {
+                title: 'Databases',
+                collection:
+                    [
+                        'MySQL',
+                        'MongoDB',
                     ]
             }
         }
@@ -135,6 +149,7 @@ const initialState = {
                         'LESS',
                         'SASS',
                         'Stylus',
+                        'PostCSS'
                     ],
             },
             //skillItemLevel2
@@ -146,6 +161,13 @@ const initialState = {
                         //skillItemLevel3
                         'JavaScript',
                     ],
+            },
+            templateEngines: {
+                title: 'Template Engines',
+                collection:
+                    [
+                        'Mustache', 'Hogan', 'Handlebars'
+                    ]
             },
             module: {
                 title: 'Module patterns',
@@ -162,13 +184,17 @@ const initialState = {
                 collection:
                 [
                     'jQuery',
+                    'Microevent',
                     'Lodash',
-                    'UnderscoreJS',
-                    'PrototypeJS',
-                    'KnockoutJS',
-                    'MustacheJS',
-                    'HoganJS',
-                    'ReactJS',
+                    'Prototype',
+                    'Knockout',
+                    'React',
+                    'React Router',
+                    'Reactstrap',
+                    'React Bootstrap',
+                    'Redux',
+                    'Flux',
+                    'Aphroditejs'
                 ]
             },
             libscss: {
@@ -178,7 +204,19 @@ const initialState = {
                     'Bootstrap 3',
                     'Bootstrap 4',
                     'Semantic UI',
+                    'UIKIT',
+                    'Materialize',
+                    'LostGrid',
+                    'S-grid',
+                    'Textillate',
                 ]
+            },
+            frameworks: {
+                title: 'Frameworks',
+                collection:
+                    [
+                        'Nextjs'
+                    ]
             },
             taskRunners: {
                 title: 'Task runners',
@@ -215,6 +253,9 @@ const initialState = {
         [
             'YouTube',
             'Google Maps',
+            'Twitter',
+            'VK',
+            'Telegram'
         ]
     }
 };
