@@ -29,7 +29,7 @@ class Header extends Component {
             <div className={css(headerStyles.header)}>
                 <Grid className={css(appStyles.container)}>
                     <Row className={css(headerStyles.headerRow)}>
-                        <Col  xs={12} sm={12} md={6} lg={4} >
+                        <Col  xs={12} sm={12} md={12} lg={12} >
                             <div className={css(headerStyles.col1Container)}>
                                 <Link to="/" className={css(logoStyles.logoWrapp) + ' ' + css(headerStyles.logoWrapp)}>
                                     <div className={css(fontStyles.fontLogo) + ' ' + css(headerStyles.fontLogo)}>
@@ -39,7 +39,7 @@ class Header extends Component {
 
                             </div>
                         </Col>
-                        <Col  xs={12} sm={12} md={6} lg={8}>
+                        <Col  xs={12} sm={12} md={12} lg={12}>
                             <div className={css(fontStyles.font_1) + ' ' + css(headerStyles.col2Container)}>
                                 <nav className={css(headerStyles.nav)}>
                                 {this.props.items.map((item, index) =>

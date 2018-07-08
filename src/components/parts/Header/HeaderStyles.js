@@ -11,9 +11,9 @@ export const headerStyles = StyleSheet.create({
     },
     nav: {
         display: 'flex',
-        justifyContent: 'flex-end',
+        justifyContent: 'center',
         alignItems: 'center',
-        marginRight: '-15px',
+        // marginRight: '-15px',
         height: '100%',
 
         '@media (max-width: 991px)': {
@@ -34,7 +34,7 @@ export const headerStyles = StyleSheet.create({
         }
     },
     logoWrapp: {
-        marginLeft: '-15px',
+        // marginLeft: '-15px',
 
         '@media (max-width: 991px)': {
             marginLeft: '0px',
@@ -50,10 +50,10 @@ export const headerStyles = StyleSheet.create({
         },
     },
     col1Container: {
-        '@media (max-width: 991px)': {
-            display: 'flex',
-            justifyContent: 'center'
-        },
+        display: 'flex',
+        justifyContent: 'center'
+        // '@media (max-width: 991px)': {
+        // },
     },
     col2Container: {
         height: '100%',
