@@ -26,11 +26,8 @@ class Home extends Component {
                         <Col xs={12} className={css(appStyles.lastParagraphsClean) + ' '+ css(appStyles.contentCol)}>
                             <p className={css(textStyles.paragraphCenter)}>
                                 Welcome to my web card. My name is Alexandr and i have a
-                                <strong>1 year good experience</strong> for create HTML
+                                <strong> 6 month good experience</strong> for create HTML
                                 templates and work with CMS systems, such as Wordpress and Magento.
-                            </p>
-                            <p className={css(textStyles.paragraphCenter)}>
-                                My specialization in web development - work with client and server side JavaScript.
                             </p>
                             <p className={css(textStyles.paragraphCenter)}>
                                 More information about my works and me you can find in this web card.

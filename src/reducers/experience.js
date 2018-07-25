@@ -29,10 +29,10 @@ const initialState = [
     },
     {
         id:          '5',
-        function:    'Frontend-developer',
-        period:      'march 2016, Freelance(Omsk)',
+        function:    'Web-developer',
+        period:      'september 2016, Freelance(Russia)',
         description: `Development of business card websites (Wordpress, Codeigniter) 
-                        and online stores (Wordpress, OpenCart, Magento). 
+                        and online stores (Wordpress, Magento). 
                         Redesign (change of layout on ready design) and support of sites (work with content).
                         Create HTML layouts mostly`,
 

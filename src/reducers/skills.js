@@ -244,7 +244,7 @@ const initialState = {
             'Wordpress',
             'Magento 1',
             'Magento 2',
-            'OpenCart',
+            // 'OpenCart',
         ]
     },
     apiSkills: {
