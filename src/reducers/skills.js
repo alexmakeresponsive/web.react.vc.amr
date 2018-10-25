@@ -84,6 +84,16 @@ const initialState = {
                     'SQL', 'PHP', 'JavaScript'
                 ],
             },
+            configuration: {
+                title: 'Configuration',
+                collection:
+                //skillItemLevel2Value
+                    [
+                        //skillItemLevel3
+                        'XML',
+                        'YAML',
+                    ],
+            },
             templateEngines: {
                 title: 'Template Engines',
                 collection:
@@ -136,7 +146,17 @@ const initialState = {
                 [
                     //skillItemLevel3
                     'HTML5',
+                    'XHTML',
                 ],
+            },
+            configuration: {
+                title: 'Configuration',
+                collection:
+                //skillItemLevel2Value
+                    [
+                        //skillItemLevel3
+                        'JSON',
+                    ],
             },
             //skillItemLevel2
             styles: {
